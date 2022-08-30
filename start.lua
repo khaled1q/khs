@@ -7957,6 +7957,65 @@ local msgg = msg.id/2097152/0.5
 return https.request("https://api.telegram.org/bot"..Token.."/sendmessage?chat_id="..msg.chat_id.."&message=https://t.me/EKKKK9/"..math.random(2,86).."&caption="..URL.escape(" ⌔ ︙ تم اختيار راب لك").."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
 end
+
+if data and data.luatele and data.luatele == "updateNewInlineQuery" then
+local Text = data.query 
+if Text == '' then
+local input_message_content = {message_text = " • اهلا بك عزيزي\n • لارسال الهمسه اكتب يوزر البوت + الهمسه + يوزر العضو\n • مثال @cemkbot هلا @E_M_K"} 
+local resuult = {{
+type = 'article',
+id = math.random(1,64),
+title = 'اضغط هنا لمعرفه كيفيه ارسال الهمسه',
+input_message_content = input_message_content,
+reply_markup = {
+inline_keyboard ={
+{{text ="❲ Developer Khaled .  ❳", url= "https://t.me/E_M_K"}},
+}
+},
+},
+}
+https.request("https://api.telegram.org/bot"..Token..'/answerInlineQuery?inline_query_id='..data.id..'&switch_pm_text=اضغط لارسال الهمسه&switch_pm_parameter=start&results='..JSON.encode(resuult))
+end
+if Text and Text:match("(.*)@(.*)") then
+local hm = {string.match(Text,"(.*)@(.*)")}
+local user = hm[2]
+local hms = hm[1]
+UserId_Info = LuaTele.searchPublicChat(user)
+local idd = UserId_Info.id
+local key = math.random(1,999999)
+Redis:set(idd..key.."hms",hms)
+local us = LuaTele.getUser(idd)
+local name = us.first_name
+local input_message_content = {message_text = "- الهمسة إلى  ["..name.."](tg://user?id="..idd..")  ", parse_mode = 'Markdown'} 
+local resuult = {{
+type = 'article',
+id = math.random(1,64),
+title = 'هذه همسه سريه الى '..name..'',
+input_message_content = input_message_content,
+reply_markup = {
+inline_keyboard ={
+{{text ="فتح الهمسه  ", callback_data = idd.."hmsaa"..data.sender_user_id.."/"..key}},
+}
+},
+},
+}
+https.request("https://api.telegram.org/bot"..Token..'/answerInlineQuery?inline_query_id='..data.id..'&switch_pm_text=اضغط لارسال الهمسه&switch_pm_parameter=start&results='..JSON.encode(resuult))
+end
+end
+if data and data.luatele and data.luatele == "updateNewInlineCallbackQuery" then
+var(data)
+local Text = LuaTele.base64_decode(data.payload.data)
+if Text and Text:match('(.*)hmsaa(.*)/(.*)')  then
+local mk = {string.match(Text,"(.*)hmsaa(.*)/(.*)")}
+local hms = Redis:get(mk[1]..mk[3].."hms")
+if tonumber(mk[1]) == tonumber(data.sender_user_id) or tonumber(mk[2]) == tonumber(data.sender_user_id) then
+https.request("https://api.telegram.org/bot"..Token.."/answerCallbackQuery?callback_query_id="..data.id.."&text="..URL.escape(hms).."&show_alert=true")
+end
+if tonumber(mk[1]) ~= tonumber(data.sender_user_id) or tonumber(mk[2]) ~= tonumber(data.sender_user_id) then
+https.request("https://api.telegram.org/bot"..Token.."/answerCallbackQuery?callback_query_id="..data.id.."&text="..URL.escape("الهمسه ليست لك").."&show_alert=true")
+end
+end
+end
 ----------------------------------------------------------------------------------------------------
 end
 ----------------------------------------------------------------------------------------------------
