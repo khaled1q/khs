@@ -97,7 +97,7 @@ token=Token
 }
 ----------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------------
-namebot = redis:get(bot_id..":namebot") or " يوسف"
+namebot = redis:get(bot_id..":namebot") or " بلاك"
 SudosS = {1951693700}
 Sudos = {sudoid,1951693700}
 ----------------------------------------------------------------------------------------------------
@@ -1170,7 +1170,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1296,7 +1296,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1332,7 +1332,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1386,7 +1386,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1422,7 +1422,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1467,7 +1467,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1494,7 +1494,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1521,7 +1521,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1548,7 +1548,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1575,7 +1575,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1635,7 +1635,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1687,7 +1687,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1928,7 +1928,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1955,7 +1955,7 @@ reply_dev = bot.replyMarkup{
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -1978,7 +1978,7 @@ bot.sendText(msg.chat_id,msg.id,"*  ⌔ ︙اهلا بك في قائمة الا�
 type = 'inline',data = {
 	{{text = ' ⌔ ︙ الاحصائيات',data="indfo"}},
 	{{text = ' ⌔ ︙ تغيير المطور الاساسي',data="EditDevbot"}},
-{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "يوسف"),data="delnamebot"}},
+{{text = ' ⌔ ︙ تغيير اسم البوت',data="namebot"},{text =(redis:get(bot_id..":namebot") or "بلاك"),data="delnamebot"}},
 {{text = ' ⌔ ︙ تغيير رسالة ستارت',data="addstarttxt"},{text =" ⌔ ︙ حذف رسالة ستارت",data="Deltxtstart"}},
 {{text = ' ⌔ ︙ تنظيف المشتركين',data="clenMsh"},{text =" ⌔ ︙ تنظيف المجموعات",data="clenMg"}},
 {{text = 'التواصل',data="..."},{text ='اشعارات',data=".."},{text ='الاذاعة',data="...."},{text = 'المغادرة',data="..."},{text = 'التعريف',data="..."}},
@@ -3564,10 +3564,10 @@ if text == "الساعة" then
 bot.sendText(msg.chat_id,msg.id,"*  ⌔ ︙الساعة الان : ( "..os.date("%I:%M%p").." )*","md",true)  
 end
 if text == "شسمك" or text == "سنو اسمك" then
-namet = {"اسمي "..(redis:get(bot_id..":namebot") or "يوسف"),"عمريي اسمي "..(redis:get(bot_id..":namebot") or "يوسف"),"اني لقميل "..(redis:get(bot_id..":namebot") or "يوسف"),(redis:get(bot_id..":namebot") or "يوسف").." اني"}
+namet = {"اسمي "..(redis:get(bot_id..":namebot") or "بلاك"),"عمريي اسمي "..(redis:get(bot_id..":namebot") or "بلاك"),"اني لقميل "..(redis:get(bot_id..":namebot") or "بلاك"),(redis:get(bot_id..":namebot") or "بلاك").." اني"}
 bot.sendText(msg.chat_id,msg.id,"*"..namet[math.random(#namet)].."*","md",true)  
 end
-if text == "بوت" or text == (redis:get(bot_id..":namebot") or "يوسف") then
+if text == "بوت" or text == (redis:get(bot_id..":namebot") or "بلاك") then
 nameBot = {"ها حبي","نعم تفضل ؟","محتاج شي","عندي اسم وعيونك","تفضل خبصتني","هاككو","وقزلقرطططط شرايد","عندي اسم وعيونك","بوت اللفك نشالله شتري","قول حياتي","الحجايه هاي لاتجيبها على لسانك بعد","باوع لك خليني احبك وصيحلي باسمي","هاااا فضني"}
 bot.sendText(msg.chat_id,msg.id,"*"..nameBot[math.random(#nameBot)].."*","md",true)  
 end
