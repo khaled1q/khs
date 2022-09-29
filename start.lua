@@ -8874,39 +8874,25 @@ newss = "["..bann.first_name.."](tg://user?id="..bann.id..")"
 else
 newss = " لا يوجد "
 end
-
 if gg == hsabe then
 nsba = "خصمت 2% لبنك "..hsabe..""
 UserNameyr = math.floor(UserNamey / 100 * 2)
 UserNameyy = math.floor(UserNamey - UserNameyr)
-
-
 redis:incrby(bot_id.."nool:flotysb"..fsvhhh ,UserNameyy)
 redis:decrby(bot_id.."nool:flotysb"..msg.sender.user_id ,UserNamey)
 redis:setex(bot_id.."polici" .. msg.sender.user_id,600, true)
 redis:setex(bot_id.."hramep" ..UserNamey ,600, true)
-return bot.sendText(msg.chat_id,msg.id, "  *حوالة صادرة من بنك↢ ( * "..gg.."* )\n\nالمرسل :   *"..news.."\n*الحساب رقم :` *"..cccc.."`\n*نوع البطاقة :* "..uuuu.."\n  *المستلم: *  "..newss.."\n  *الحساب رقم : `* "..text.."`\n  *البنك : *"..hsabe.."\n  *نوع البطاقة : *"..nouu.."\n"..nsba.."\n*المبلغ :*"..UserNameyy.."* ريال 💸*","md",true)
+bot.sendText(msg.chat_id,msg.id, "حوالة صادرة من البنك ↢ ( "..gg.." )\n\nالمرسل : "..news.."\nالحساب رقم : `"..cccc.."`\nنوع البطاقة : "..uuuu.."\nالمستلم : "..newss.."\nالحساب رقم : `"..text.."`\nالبنك : "..hsabe.."\nنوع البطاقة : "..nouu.."\n"..nsba.."\nالمبلغ : "..UserNameyy.." ريال 💸","md",true)
 bot.sendText(fsvhhh,0, "*حوالة واردة من البنك ↢ ( *"..gg.."* )\n\n*المرسل : *"..news.."\n*الحساب رقم : `*"..cccc.."`\n*نوع البطاقة : *"..uuuu.."\n*المبلغ : *"..UserNameyy.."* ريال 💸*","md",true)
 redis:del(bot_id.."trans" .. msg.chat_id .. ":" .. msg.sender.user_id) 
 redis:del(bot_id.."transn" .. msg.sender.user_id)
-elseif gg ~= hsabe then
-nsba = "*خصمت 2% من بنك لبنك*"
-UserNameyr = math.floor(UserNamey / 100 * 2)
-UserNameyy = math.floor(UserNamey - UserNameyr)
-redis:incrby(bot_id.."nool:flotysb"..fsvhhh ,UserNameyy)
-redis:setex(bot_id.."polici" .. msg.sender.user_id,600, true)
-redis:decrby(bot_id.."nool:flotysb"..msg.sender.user_id , UserNamey)
-bot.sendText(msg.chat_id,msg.id, "حوالة صادرة من البنك ↢ ( "..gg.." )\n\nالمرسل : "..news.."\nالحساب رقم : `"..cccc.."`\nنوع البطاقة : "..uuuu.."\nالمستلم : "..newss.."\nالحساب رقم : `"..text.."`\nالبنك : "..hsabe.."\nنوع البطاقة : "..nouu.."\n"..nsba.."\nالمبلغ : "..UserNameyy.." ريال 💸","md",true)
-bot.sendText(fsvhhh,0, "حوالة واردة من البنك ↢ ( "..gg.." )\n\nالمرسل : "..news.."\nالحساب رقم : `"..cccc.."`\nنوع البطاقة : "..uuuu.."\nالمبلغ : "..UserNameyy.." ريال 💸","md",true)
-redis:del(bot_id.."trans" .. msg.chat_id .. ":" .. msg.sender.user_id) 
-redis:del(bot_id.."transn" .. msg.sender.user_id)
-end
 else
 bot.sendText(msg.chat_id,msg.id, "• مافيه حساب بنكي كذا","md",true)
 redis:del(bot_id.."trans" .. msg.chat_id .. ":" .. msg.sender.user_id) 
 redis:del(bot_id.."transn" .. msg.sender.user_id)
 end
 end
+
 if text and text:match("^تصفيرر (.*)$") then
 bl = text:match("^تصفيرر (.*)$")
 if not msg.ControllerBot then
